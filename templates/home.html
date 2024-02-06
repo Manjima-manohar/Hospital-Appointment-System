@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+{% block title%}
+Home
+{%endblock%}
+
+{% block content%}
+
+{%load static%}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="{%static '/images/home1.jpg'%}" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{%static '/images/home2.jpg'%}" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="{%static '/images/home3.jpg'%}" class="d-block w-100" alt="...">
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<div class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left-image">
+                    <img src="{%static '/images/about1.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right-content">
+                    <h4>Quality Policy</h4>
+                    <span>At City Hospital, we subscribe to the view that quality is the outcome of all activities that take place within the organization.</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i><p>City Hospitalfocuses to provide total health care to its patients, with the highest levels of skill, professionalism and ethical practice, leading to their effective care and treatment at affordable costs.</p>
+                    </div>
+                    <p>The Hospital facilitates medical education and research, and is committed to continued quality improvement. We also place emphasis on the focus of improvements being on systems and processes rather than on the individual; also that all function and employees have to participate in the improvement process.</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{%endblock%}

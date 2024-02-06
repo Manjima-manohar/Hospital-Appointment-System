@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}
+about
+{%endblock%}
+{% block content %}
+{%load static%}
+<div class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left-image">
+                    <img src="{%static '/images/about1.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right-content">
+                    <h4>Quality Policy</h4>
+                    <span>At City Hospital, we subscribe to the view that quality is the outcome of all activities that take place within the organization.</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i><p>City Hospital focuses to provide total health care to its patients, with the highest levels of skill, professionalism and ethical practice, leading to their effective care and treatment at affordable costs.</p>
+                    </div>
+                    <p>The Hospital facilitates medical education and research, and is committed to continued quality improvement. We also place emphasis on the focus of improvements being on systems and processes rather than on the individual; also that all function and employees have to participate in the improvement process.</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h1 class="text-center">OUR CORE VALUES</h1>
+<hr>
+<p class="text-wrap text-center fs-3 fst-italic text-primary">Comprehensive care, 
+    Holistic, Respect, Integrity, Stewardship, Teamwork, 
+    Leadership, Organized, Responsibility and Development
+    (“CHRIST LORD”)</p>
+<div class="container text-center bg-light">
+
+    <div class="card text-center mx-3 my-3" style="width: 18rem; display: inline-block;">
+    <!-- <img src="" class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">Comprehensive care</h5>
+      <p class="card-text text-wrap">we provide comprehensive care by the concurrent prevention and management of multiple physical and emotional health problems  in relationship to family.</p>
+    </div>
+    </div>
+    <div class="card text-center mx-3 my-3" style="width: 18rem; display: inline-block;">
+    <div class="card-body">
+        <h5 class="card-title">Holistic</h5>
+        <p class="card-text text-wrap">We practice a holistic approach providing support that looks at the whole person considering their physical, emotional, social and spiritual well-being.</p>
+      </div>
+      </div>
+      <div class="card text-center mx-3 my-3" style="width: 18rem; display: inline-block;">
+      <div class="card-body">
+        <h5 class="card-title">Respect</h5>
+        <p class="card-text text-wrap">We respect diversity and treat each individual irrespective of religion, caste, creed, gender or social status with the highest professionalism and diversity.</p>
+      </div>
+  </div>
+<div class="card text-center mx-3 my-3" style="width: 18rem; display: inline-block;">
+    <div class="card-body">
+      <h5 class="card-title">Integrity</h5>
+      <p class="card-text text-wrap">We communicate openly and honestly with utmost  each individual irrespective of integrity ensuring the confidence of all our stakeholders;</p>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}
